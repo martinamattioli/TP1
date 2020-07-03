@@ -24,3 +24,37 @@ matoAAgatha(Persona):-
     not(esMasRicoQueAgatha(Persona)). 
 
 
+/*
+
+Consultas
+
+1 ?- matoAAgatha(Quien).
+Quien = tiaAgatha .
+
+2 ?- odia(_,milhouse).
+false.
+
+3 ?- odia(charles,Quien).
+Quien = elCarnicero.
+
+4 ?- odia(Quien,tiaAgatha).
+Quien = tiaAgatha ;
+Quien = elCarnicero.
+
+5 ?- odia(Odiador,Odiado).
+Odiador = tiaAgatha,
+Odiado = charles ;
+Odiador = Odiado, Odiado = tiaAgatha ;
+Odiador = charles,
+Odiado = elCarnicero ;
+Odiador = elCarnicero,
+Odiado = charles ;
+Odiador = elCarnicero,
+Odiado = tiaAgatha.
+
+6 ?- odia(elCarnicero,_).
+true .
+
+*/
+
+
